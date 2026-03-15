@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bilişim Sistemleri Mühendisi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1A365D; /* Koyu Lacivert */
+            --text-color: #2D3748; /* Antrasit / Koyu Gri */
+            --bg-light: #F4F6F9; /* Buz Grisi Arka Plan */
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background-color: #e2e8f0;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            min-height: 1122px; /* A4 Boyutu Oranı */
+        }
+
+        /* Sol Sütun (Profil, İletişim, Eğitim, Yetenekler) */
+        .left-column {
+            width: 35%;
+            background-color: var(--bg-light);
+            padding: 40px 30px;
+            border-right: 2px solid #e2e8f0;
+        }
+
+        .profile-img-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 100%;           
+            max-width: 180px;      
+            height: auto;          
+            border: 4px solid var(--primary-color); 
+            border-radius: 0;      
+        }
+
+        .left-column h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 16px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        .contact-info p, .education-info p {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .skills-list {
+            list-style-type: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 15px;
+        }
+
+        .skill-title {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .skill-desc {
+            font-size: 12px;
+            color: #4a5568;
+        }
+
+        /* Sağ Sütun (Özet, Projeler, Deneyim) */
+        .right-column {
+            width: 65%;
+            padding: 50px 40px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 36px;
+            line-height: 1.1;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #718096;
+            font-weight: 400;
+        }
+
+        .right-column h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+
+        .summary {
+            text-align: justify;
+        }
+
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        .project-tag {
+            font-style: italic;
+            font-size: 13px;
+            color: #718096;
+        }
+
+        .project-tech {
+            font-size: 13px;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .project-desc {
+            font-size: 13px;
+            text-align: justify;
+        }
+
+        /* PDF Çıktısı İçin Ayarlar */
+        @media print {
+            body {
+                background-color: var(--white);
+            }
+            .cv-container {
+                margin: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    
+    <div class="left-column">
+        <div class="profile-img-container">
+            <img src="profil.jpeg" alt="Profil Fotoğrafı" class="profile-img">
+        </div>
+
+        <h3>İletişim</h3>
+        <div class="contact-info">
+            <p>📍 Muğla/Marmaris</p>
+            <p>📱 +90 543 719 03 91</p>
+            <p>✉️ yigithasann48@gmail.com</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/hasan-yiğit-5355933b7/" target="_blank">linkedin.com/in/hasan-yigit</a></p>
+<p>🔗 <a href="https://github.com/yigithasan1" target="_blank">github.com/yigithasan1</a></p>
+        </div>
+
+        <h3>Eğitim</h3>
+        <div class="education-info">
+            <p><strong>Muğla Sıtkı Koçman Üniversitesi</strong></p>
+            <p>Bilişim Sistemleri Mühendisliği</p>
+            <p><em>Beklenen Mezuniyet: 2027</em></p>
+        </div>
+
+        <h3>Temel Yetkinlikler</h3>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-title">Programlama & Web</span>
+                <span class="skill-desc">C#, Python, ASP.NET, HTML5, CSS</span>
+            </li>
+            <li>
+                <span class="skill-title">Veritabanı Yönetimi</span>
+                <span class="skill-desc">MySQL, MS SQL Server</span>
+            </li>
+            <li>
+                <span class="skill-title">Araçlar & Ortamlar</span>
+                <span class="skill-desc">Visual Studio, GitHub, Cisco Packet Tracer, Weka, Orange</span>
+            </li>
+            <li>
+                <span class="skill-title">Yabancı Dil</span>
+                <span class="skill-desc">İngilizce (Konuşma, okuma ve teknik doküman anlama)</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <div class="header">
+            <h1>Hasan Yiğit</h1>
+            <h2>Bilişim Sistemleri Mühendisliği Öğrencisi</h2>
+        </div>
+
+        <h3>Profil Özeti</h3>
+        <p class="summary">
+            Muğla Sıtkı Koçman Üniversitesi Bilişim Sistemleri Mühendisliği 3. sınıf öğrencisi olarak; web geliştirme, veritabanı yönetimi ve veri analizi konularında temel düzeyde teorik bilgiye sahibim. Akademik projelerimde ASP.NET, C# ve MySQL gibi teknolojileri kullanarak pratik yapma fırsatı buluyorum. Şu anda Python ve IoT bileşenleriyle donanım/yazılım entegrasyonları üzerine araştırmalar yapıyor; kendimi geliştirmeye ve yeni teknolojileri uygulamalı olarak öğrenmeye büyük bir motivasyonla devam ediyorum.
+        </p>
+
+        <h3>Devam Eden Projeler</h3>
+        
+        <div class="project-item">
+            <div class="project-header">
+                <span class="project-title">AI Destekli Akıllı Kask ve Kaza Tespit Sistemi</span>
+                <span class="project-tag">Akademik Ar-Ge Projesi</span>
+            </div>
+            <div class="project-tech">Teknolojiler: Python, TensorFlow Lite, ESP32, MPU6050, Ring Buffer Algoritması</div>
+            <div class="project-desc">
+                Motosiklet sürücülerinin güvenliği için kaza anını yapay zeka ile tespit eden ve acil durum protokollerini başlatan bir sistem tasarımı. Projenin başlangıç aşamasında olup; literatür taraması, teknoloji seçimi ve sensör verilerinin yapılandırılması üzerine aktif olarak araştırmalar sürdürülmektedir.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <span class="project-title">Web Tabanlı Rezervasyon Sistemi</span>
+                <span class="project-tag">Akademik Proje</span>
+            </div>
+            <div class="project-tech">Teknolojiler: ASP.NET, C#, HTML5, CSS, MySQL</div>
+            <div class="project-desc">
+                Kullanıcıların web arayüzü üzerinden rezervasyon işlemleri yapabileceği dinamik bir platform tasarımı. Geliştirme sürecinin başlarındayken; Visual Studio üzerinde arayüz entegrasyonları yapılmakta ve projeye GitHub üzerinden versiyon kontrolü uygulamalı olarak entegre edilmektedir.
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Tamamlanan Akademik Çalışmalar</h3>
+        <div class="project-item">
+            <div class="project-header">
+                <span class="project-title">Veri Madenciliği ve Analiz Uygulamaları</span>
+            </div>
+            <div class="project-tech">Araçlar: Weka, Orange</div>
+            <div class="project-desc">
+                Çeşitli veri setleri üzerinde sınıflandırma ve kümeleme algoritmaları uygulanarak temel veri analizi süreçleri deneyimlendi.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <span class="project-title">Ağ Simülasyonu ve Yapılandırma</span>
+            </div>
+            <div class="project-tech">Araçlar: Cisco Packet Tracer</div>
+            <div class="project-desc">
+                Temel ağ topolojileri oluşturularak cihazlar arası iletişim, ping atma ve e-posta servisleri gibi ağ senaryoları simüle edildi.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
